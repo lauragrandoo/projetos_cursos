@@ -1,12 +1,9 @@
 ## Projeto desenvolvido no curso de HTML e CSS pela Alura
 
-### Reprodução de Portifolio:
+### Reprodução de Portfolio:
 
 <br>
 
-![image](https://github.com/user-attachments/assets/8a99af85-b464-452d-8b92-d989a1a0b420)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/0f0a9b2a-4cff-453b-9477-dfd8a1c837d3)
+<img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/31f9e392-6318-40fb-b6f9-85d3b798ac04" />
+<img width="1919" height="920" alt="image" src="https://github.com/user-attachments/assets/a05d6cc4-982e-4b78-a9da-76a69d1889f5" />
 
