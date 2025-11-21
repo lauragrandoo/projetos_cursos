@@ -2,77 +2,77 @@
 {
     "nome": "Javascript",
     "descricao": "O JS é uma linguagem da Web",
-    "ano": 1995,
+    "data_criacao": 1995,
     "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
 },
 
 {
     "nome": "Python",
     "descricao": "O Python é a linguagem de ciência de dados e IA",
-    "ano": 1991,
+    "data_criacao": 1991,
     "link": "https://docs.python.org/3/"
 },
 
 {
     "nome": "Java",
     "descricao": "Java é uma linguagem de programação orientada a objetos e uma plataforma de computação.",
-    "ano": 1995,
+    "data_criacao": 1995,
     "link": "https://docs.oracle.com/en/java/"
 },
 
 {
     "nome": "C#",
     "descricao": "C# é uma linguagem de programação moderna, orientada a objetos e de tipo seguro da Microsoft.",
-    "ano": 2000,
+    "data_criacao": 2000,
     "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/"
 },
 
 {
     "nome": "TypeScript",
     "descricao": "TypeScript é um superconjunto de JavaScript que adiciona tipos estáticos opcionais.",
-    "ano": 2012,
+    "data_criacao": 2012,
     "link": "https://www.typescriptlang.org/docs/"
 },
 
 {
     "nome": "Go",
     "descricao": "Go (ou Golang) é uma linguagem de programação de código aberto criada pelo Google, focada em simplicidade e concorrência.",
-    "ano": 2009,
+    "data_criacao": 2009,
     "link": "https://go.dev/doc/"
 },
 
 {
     "nome": "Rust",
     "descricao": "Rust é uma linguagem de programação que se concentra em segurança, velocidade e concorrência.",
-    "ano": 2010,
+    "data_criacao": 2010,
     "link": "https://doc.rust-lang.org/"
 },
 
 {
     "nome": "PHP",
     "descricao": "PHP é uma linguagem de script de código aberto de uso geral, especialmente adequada para o desenvolvimento web.",
-    "ano": 1995,
+    "data_criacao": 1995,
     "link": "https://www.php.net/manual/pt_BR/"
 },
 
 {
     "nome": "Swift",
     "descricao": "Swift é uma linguagem de programação poderosa e intuitiva para macOS, iOS, watchOS e tvOS, criada pela Apple.",
-    "ano": 2014,
+    "data_criacao": 2014,
     "link": "https://docs.swift.org/swift-book/"
 },
 
 {
     "nome": "Kotlin",
     "descricao": "Kotlin é uma linguagem de programação moderna e estaticamente tipada, usada para desenvolvimento Android e backend.",
-    "ano": 2011,
+    "data_criacao": 2011,
     "link": "https://kotlinlang.org/docs/home.html"
 },
 
 {
     "nome": "C++",
     "descricao": "C++ é uma linguagem de programação de propósito geral usada para software de sistema, jogos e aplicações de alto desempenho.",
-    "ano": 1985,
+    "data_criacao": 1985,
     "link": "https://en.cppreference.com/w/"
 }
 ]
