@@ -2,8 +2,8 @@ let bolaImagem;
 let jogadorImagem;
 let computadorImagem;
 let fundoImagem;
-let quicarSom;
-let golSom;
+// let quicarSom;
+// let golSom;
 
 let pontosJogador = 0;
 let pontosComputador = 0;
@@ -22,11 +22,11 @@ class Raquete {
         if (this.x < width / 2) {
             this.y = mouseY;
         } else {
-            if (bola.y < this.y) {
-                this.y -= 5;
-            } else {
-                this.y += 5;
-            }
+            const centroRaquete = this.y + this.h / 2;
+            const velocidadeIA = 6;
+            if (Math.abs(centroRaquete - bola.y) > velocidadeIA) {
+                this.y += (bola.y > centroRaquete) ? velocidadeIA : -velocidadeIA;
+            } 
         }
 
         if (this.y < 0) {
@@ -74,8 +74,8 @@ class Bola {
             } else {
                 pontosJogador++;
             }
-            golSom.play();
-            falaPontos();
+            // golSom.play();
+            // falaPontos();
             this.reset();
         }
         if (this.y < this.r || this.y > height - this.r) {
@@ -84,7 +84,7 @@ class Bola {
 
         if (colideRetanguloCirculo(this.x, this.y, this.r, jogador.x, jogador.y, jogador.w, jogador.h) ||
             colideRetanguloCirculo(this.x, this.y, this.r, computador.x, computador.y, computador.w, computador.h)) {
-            quicarSom.play();
+            // quicarSom.play();
             this.vx *= -1;
             this.vx *= 1.1;
             this.vy *= 1.1;
@@ -118,27 +118,27 @@ let jogador;
 let computador;
 let cnv;
 
-function falaPontos() {
-    if('speechSynthesis' in window) {
-        const pontuacao = "Pontuação é " + pontosJogador + " a " + pontosComputador;
-        console.log(pontuacao);
-        const msg = new SpeechSynthesisUtterance(pontuacao);
-        msg.lang = 'pt-BR';
-        window.speechSynthesis.speak(msg);
-    }
-}
+// function falaPontos() {
+//     if('speechSynthesis' in window) {
+//         const pontuacao = "Pontuação é " + pontosJogador + " a " + pontosComputador;
+//         console.log(pontuacao);
+//         const msg = new SpeechSynthesisUtterance(pontuacao);
+//         msg.lang = 'pt-BR';
+//         window.speechSynthesis.speak(msg);
+//     }
+// }
 
 function preload() {
-    bolaImagem = loadImage('bola.png');
-    jogadorImagem = loadImage('barra01.png');
-    computadorImagem = loadImage('barra01.png');
-    fundoImagem = loadImage('fundo3.jpg');
-    quicarSom = loadSound('446100__justinvoke__bounce.wav');
-    golSom = loadSound('274178__littlerobotsoundfactory__jingle_win_synth_02.wav');
+    bolaImagem = loadImage('assets/bola.png');
+    jogadorImagem = loadImage('assets/barra01.png');
+    computadorImagem = loadImage('assets/barra01.png');
+    fundoImagem = loadImage('assets/fundo3.jpg');
+    // quicarSom = loadSound('assets/446100__justinvoke__bounce.wav');
+    // golSom = loadSound('assets/274178__littlerobotsoundfactory__jingle_win_synth_02.wav');
 }
 
 function setup() {
-    cnv = createCanvas(800, 400);
+    cnv = createCanvas(600, 400);
     cnv.position((windowWidth - width) / 2, (windowHeight - height) / 2);
     bola = new Bola();
     jogador = new Raquete(30);
@@ -151,7 +151,7 @@ function windowResized() {
 
 function draw() {
     
-    background(490); 
+    background(255); 
 
     let canvasAspectRatio = width / height;
     let fundoAspectRatio = fundoImagem.width / fundoImagem.height;
