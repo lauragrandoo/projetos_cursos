@@ -33,6 +33,16 @@ nav.profiles {
     gap: 2rem;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .profile {
     text-decoration: none;
     color: #fff;
@@ -49,12 +59,12 @@ figure {
 img {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 50%; 
     object-fit: cover;
     margin-bottom: 0.5rem;
     background: #222;
-    display: block;
-    border: 1px transparent;
+    display: block;        
+    border: 1px transparent; 
 }
 
 img:hover {
@@ -67,3 +77,88 @@ figcaption {
     margin-top: 0.5rem;
     letter-spacing: 0.5px;
 }
+
+body.light-mode {
+    background: #f5f5f5;
+    color: #222;
+}
+
+.light-mode .profile {
+    color: #222;
+}
+
+.light-mode img {
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+.light-mode img:hover {
+    border: 1px solid #222;
+}
+
+#theme-toggle {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+#theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.light-mode #theme-toggle {
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.18);
+}
+
+.light-mode #theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 900px) {
+    section[aria-label="Perfis disponíveis"] {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    nav.profiles {
+        gap: 1rem;
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin-top: 6rem;
+        min-height: auto;
+        padding: 2rem 0;
+    }
+
+    nav.profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        gap: 4rem;
+    }
+}
+
