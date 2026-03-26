@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
+        <button id="theme-toggle" onclick="toggleTheme()" 
+        style="position: absolute; top: 1rem; right: 1rem; z-index: 10; cursor: pointer;"
+        aria-label="Alternar tema"></button>
+
         <h1>Quem está assistindo?</h1>
         <section aria-label="Perfis disponíveis">
             <nav class="profiles">
-                <a href="#" class="profile">
-                    <figure>
-                        <img src="/assets/retrato-3.png" alt="">
-                        <figcaption>Matheus</figcaption>
-                    </figure>
-                </a>
-                <a href="#" class="profile">
-                    <figure>
-                        <img src="/assets/retrato-1.png" alt="">
-                        <figcaption>Laura</figcaption>
-                    </figure>
-                </a>
-                <a href="#" class="profile">
-                    <figure>
-                        <img src="/assets/retrato-2.png" alt="">
-                        <figcaption>Convidado 1</figcaption>
-                    </figure>
-                </a>
-                <a href="#" class="profile">
-                    <figure>
-                        <img src="/assets/retrato-4.png" alt="">
-                        <figcaption>Convidado 2</figcaption>
-                    </figure>
-                </a>
+                <ul>
+                    <li>
+                        <a href="#" class="profile">
+                            <figure>
+                                <img src="/assets/retrato-3.png" alt="">
+                                <figcaption>Matheus</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="profile">
+                            <figure>
+                                <img src="/assets/retrato-1.png" alt="">
+                                <figcaption>Laura</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="profile">
+                            <figure>
+                                <img src="/assets/retrato-2.png" alt="">
+                                <figcaption>Convidado 1</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="profile">
+                            <figure>
+                                <img src="/assets/retrato-4.png" alt="">
+                                <figcaption>Convidado 2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </section>
     </main>
+    <script src="theme.js"></script>
 </body>
+
 </html>
