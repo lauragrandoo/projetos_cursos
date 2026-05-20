@@ -1,1 +1,1 @@
-Repositório dedicado à projetos desenvolvidos durantes cursos e imersões. 
+Repositório dedicado à projetos e exercícios desenvolvidos durantes cursos e imersões. 
